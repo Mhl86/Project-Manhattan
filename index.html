@@ -7,66 +7,66 @@
 
     <title>Manhattan Project</title>
   </head>
-  <body class="w-full px-8">
-    <!-- Navbar -->
+  <body class="w-full">
+    <!-- Navbar -Param -->
     <header>
-      <nav>
-        <h1>Logo</h1>
-        <ul>
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+      <nav class="bg-white shadow-md">
+        <div
+          class="container mx-auto px-4 py-4 flex items-center justify-between"
+        >
+          <h1 class="text-2xl font-bold font-serif">Logo</h1>
+          <ul class="flex space-x-8">
+            <li><a href="#" class="hover:underline">Home Page</a></li>
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li>
+              <a href="contactUs.html" class="hover:underline">Contact us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
-      <!-- Contact Form Section -->
-      <section>
-        <h2 class="font-h1">Reach out today</h2>
-
-        <form>
-          <label for="fullname">Full name</label>
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            placeholder="Your full name"
+      <!-- Hero Section - Ciro's Part-->
+      <div class="relative h-screen overflow-hidden">
+        <!-- Background Video -->
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute w-full h-full object-cover z-0"
+        >
+          <source
+            src="https://cdn.sanity.io/files/8nn8fua5/production/c6fb986a862cbe643c40cbdd0318ebc495efb187.mp4"
+            type="video/mp4"
           />
+          Your browser does not support the video tag.
+        </video>
 
-          <label for="email">Email address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email address"
-          />
-
-          <label for="message">Messages</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Your messages here.."
-          ></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-
-        <!-- Contact Info Sidebar -->
-        <aside>
-          <p><strong>Email:</strong><br />Consulting@gmail.com</p>
-          <p><strong>Phone:</strong><br />+1 (123) 456-7890</p>
+        <!-- Overlay for Readability -->
+        <div class="absolute inset-10 bg-black/20 z-10"></div>
+        <!-- Hero Content -->
+        <div
+          class="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4"
+        >
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">
+            URBAN CALM IN A CUP
+          </h1>
           <p>
-            <strong>Office:</strong><br />456 Business Ave, New York, NY 10001
+            Balance for the city rhythm. Find your center amid Berlin's
+            beautiful chaos with our unique mung bean and tangerine infusion.
           </p>
-          <p><strong>Follow Us:</strong></p>
-          <p>Instagram | Facebook | LinkedIn | X</p>
-        </aside>
-      </section>
+          <button
+            class="bg-white/30 hover:bg-white/70 text-white font-semibold py-3 px-6 rounded-lg backdrop-blur-md transition duration-300"
+          >
+            Start Exploring
+          </button>
+        </div>
+      </div>
 
       <!-- Card Section - Ciro's Part-->
-      <section class="w-full py-[2rem] grid gap-[2rem]">
+      <section class="w-full py-[8rem] grid gap-[2rem]">
         <div class="flex gap-[2rem]">
           <div class="w-64 flex-1">
             <h4 class="text-3xl">
@@ -80,8 +80,12 @@
               Contact us
             </button>
           </div>
-          <figure class="w-48 flex-1 max-w-l">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 307 100">
+          <figure class="w-36 flex-1 p-[2rem]max-w-l">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 307 100"
+              class="w-full"
+            >
               <path
                 d="M0 86.8h41.9c19.6 0 31.3-8.3 31.3-24.5 0-10.2-6-16.2-15.1-19.2 7.2-3.4 12.1-9.4 12.1-19.2 0-12.5-7.9-21.5-27.2-21.5H0zm47.2-58.5c0 5.7-3.8 8.7-11.7 8.7H23V19.6h12.5c8.3 0 11.7 3 11.7 8.7m2.6 32.5c0 6-3.8 8.7-12.1 8.7H22.6V51.7h15.1c8.3.4 12.1 3 12.1 9.1M128.3 0h-18.9L73.6 100h18.5zm88.3 44.5c0-23.8-12.8-42.3-46-42.3h-35.5v84.5h35.5c32.8.1 46-18.4 46-42.2m-24.1 0c0 16.6-9.4 22.6-22.3 22.6h-12.1V21.9h12.1c12.8 0 22.3 6 22.3 22.6M224.2 46.4c0 22.6 18.5 41.1 41.1 41.1s41.1-18.5 41.1-41.1-18.5-41.1-41.1-41.1c-22.7 0-41.1 18.5-41.1 41.1m7.9 0c0-18.9 14.7-34 33.2-34s33.2 15.1 33.2 34-15.1 34-33.2 34c-18.5-.4-33.2-15.5-33.2-34M246 66.8h12.8v-14h7.5l7.5 14h14l-9.4-16.6c4.2-1.9 7.5-6.8 7.5-12.1 0-9.4-6-14-16.6-14h-23.8v42.6h.5zm26.8-28.7c0 3.4-2.3 4.9-6.4 4.9h-7.9v-9h7.9c4.5.3 6.4 1.1 6.4 4.1"
               ></path>
@@ -135,277 +139,292 @@
           </div>
         </div>
       </section>
+
+      <!--icons with description-->
+      <div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <h3 class="text-[32px] leading-[1.3] mb-20 font-bold">
+          FEATURED ENGAGEMENTS
+        </h3>
+
+        <div class="flex overflow-x-auto space-x-4 p-4 ...">
+          <div class="min-w-[150px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p>
+              ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
+              01234 56789.
+              <a class="underline hover:text-[#f86e08]" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[150px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p>
+              ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
+              01234 56789.
+              <a class="underline hover:text-[#f86e08]" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[150px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p>
+              ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
+              01234 56789.
+              <a class="underline hover:text-[#f86e08]" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[150px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://media.istockphoto.com/id/177002021/photo/child-and-small-horse-in-the-field.jpg?s=612x612&w=0&k=20&c=YoIhv2bbOcEfGiNxWbAxI67s950HysR9NB5OdG6M5jM="
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p>
+              ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
+              01234 56789.
+              <a class="underline hover:text-[#f86e08]" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[150px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://thumbs.dreamstime.com/b/child-small-horse-field-springtime-38523596.jpg"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p>
+              ABCDEFG HIJKL Mö25ldfh ljdg dg hztfrd dfffdm dfvfnop no one qrs
+              tuvw xyz 01234 56789.
+              <a class="underline hover:text-[#f86e08]" href="">Click Here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-gray-300 ml-10 mr-10" />
+      <!--FEATURED News -->
+
+      <div>
+        <div class="flex justify-between">
+          <h3 class="text-[32px] leading-[1.3] font-bold">FEATURED NEWS</h3>
+
+          <button
+            class="bg-[#6f7447] hover:bg-[#c3df39] rounded-md w-[200px] ..."
+          >
+            View All
+          </button>
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+            >
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        </div>
+        <div class="relative">
+          <img
+            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+            width="300px"
+            height="200px"
+            alt="icon"
+          />
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+          >
+            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+            >
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        </div>
+        <div class="relative">
+          <img
+            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+            width="300px"
+            height="200px"
+            alt="icon"
+          />
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+          >
+            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+            >
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+                width="300px"
+                height="200px"
+                alt="icon"
+              />
+              <h4
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+              >
+                GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+              </h4>
+              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+                01234 56789.
+              </p>
+              <a
+                href="#"
+                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+                >&rarr;</a
+              >
+            </div>
+            <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+            >
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+                width="300px"
+                height="200px"
+                alt="icon"
+              />
+              <h4
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+              >
+                GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+              </h4>
+              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+                01234 56789.
+              </p>
+              <a
+                href="#"
+                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+                >&rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <!--icons with description-->
-    <div>
-      <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <h3 class="text-[32px] leading-[1.3] mb-20 font-bold	">FEATURED ENGAGEMENTS</h3>
-
-      <div class=" flex   overflow-x-auto space-x-4 p-4 ...">
-        <div class=" min-w-[150px]  p-4 rounded ...">
-          <img class="mb-10	"
-            src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
-            width="100px"
-            height="100px"
-            alt="icon"
-          />
-          <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
-          <p>
-            ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
-            01234 56789.
-            <a class="underline hover:text-[#f86e08]  " href="">Click Here</a>
-          </p>
-        </div>
-        <div class="min-w-[150px]  p-4 rounded ...">
-          <img class="mb-10	"
-            src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
-            width="100px"
-            height="100px"
-            alt="icon"
-          />
-          <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
-          <p>
-            ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
-            01234 56789.
-            <a class="underline hover:text-[#f86e08] " href="">Click Here</a>
-          </p>
-        </div>
-        <div class="min-w-[150px]  p-4 rounded ...">
-          <img class="mb-10	"
-            src="https://animalfair.com/wp-content/uploads/2012/07/GRIT-JULAUG09-ardea_minihorsepasture_jd-3883.jpg"
-            width="100px"
-            height="100px"
-            alt="icon"
-          />
-          <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
-          <p>
-            ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
-            01234 56789.
-            <a class="underline hover:text-[#f86e08] " href="">Click Here</a>
-          </p>
-        </div>
-        <div class="min-w-[150px]   p-4 rounded ...">
-          <img class="mb-10	"
-            src="https://media.istockphoto.com/id/177002021/photo/child-and-small-horse-in-the-field.jpg?s=612x612&w=0&k=20&c=YoIhv2bbOcEfGiNxWbAxI67s950HysR9NB5OdG6M5jM="
-            width="100px"
-            height="100px"
-            alt="icon"
-          />
-          <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
-          <p>
-            ABCDEFG HIJKL MNOP QRSTU VWX YZab cdefgh ijklm no one qrs tuvw xyz
-            01234 56789.
-            <a class="underline hover:text-[#f86e08] " href="">Click Here</a>
-          </p>
-        </div>
-        <div class="min-w-[150px]  p-4 rounded ...">
-          <img class="mb-10	"
-            src="https://thumbs.dreamstime.com/b/child-small-horse-field-springtime-38523596.jpg"
-            width="100px"
-            height="100px"
-            alt="icon"
-          />
-          <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
-          <p>
-            ABCDEFG HIJKL Mö25ldfh ljdg dg hztfrd dfffdm dfvfnop no one qrs tuvw xyz
-            01234 56789.
-            <a class="underline hover:text-[#f86e08] " href="">Click Here</a>
-          </p>
-        </div>
-      </div>
-    </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-    <!--FEATURED News -->
-
-    <div>
-      <div class="flex justify-between">
-        <h3 class="text-[32px] leading-[1.3] font-bold">FEATURED NEWS</h3>
-
-        <button class="bg-[#6f7447] hover:bg-[#c3df39] rounded-md w-[200px] ...">
-          View All
-        </button>
-      </div>
-      <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-       <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4 class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline">
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz</h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.</p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        <hr class="my-4 border-gray-300 ml-10 mr-10" />
-      <div>
-        <div class="relative">
-          <img
-            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
-            width="300px"
-            height="200px"
-            alt="icon"
-          />
-          <h4
-            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
-          >
-            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
-          </h4>
-          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-            01234 56789.
-          </p>
-          <a
-            href="#"
-            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-            >&rarr;</a
-          >
-        </div>
-        </div>
-</body>
+  </body>
 </html>
