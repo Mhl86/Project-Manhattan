@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Manhattan Project</title>
+  </head>
+  <body class="w-full">
+    <!-- Navbar -Param -->
+    <header>
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-2xl font-bold font-serif">Logo</h1>
+        <ul class="flex space-x-8">
+          <li><a href="#" class="hover:underline">Home Page</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+          <!-- Contact Section -->
+    <section class="bg-gray-100 py-12">
+      <div
+        class="max-w-6xl mx-auto px-6 md:flex md:space-x-12 bg-white shadow-lg rounded-lg p-8"
+      >
+        <!-- Left: Form -->
+        <div class="md:w-2/3">
+          <h2 class="text-4xl font-semibold mb-8 text-gray-800">
+            Reach out today
+          </h2>
+
+          <form class="space-y-6">
+            <div>
+              <label class="block mb-2 text-sm font-medium text-gray-700"
+                >Full name</label
+              >
+              <input
+                type="text"
+                class="w-full border rounded-md p-3"
+                placeholder="Your full name"
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-medium text-gray-700"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="w-full border rounded-md p-3"
+                placeholder="Your email address"
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-medium text-gray-700"
+                >Messages</label
+              >
+              <textarea
+                class="w-full border rounded-md p-3"
+                rows="5"
+                placeholder="Your messages here.."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="md:w-1/3 mt-10 md:mt-0 bg-white p-6 rounded-md">
+          <p class="text-sm text-gray-500 mb-2">Email:</p>
+          <p class="text-gray-800 font-medium mb-4">Consulting@gmail.com</p>
+
+          <p class="text-sm text-gray-500 mb-2">Phone:</p>
+          <p class="text-gray-800 font-medium mb-4">+1 (123) 456-7890</p>
+
+          <p class="text-sm text-gray-500 mb-2">Office:</p>
+          <p class="text-gray-800 font-medium mb-4">
+            456 Business Ave, New York, NY 10001
+          </p>
+
+          <p class="text-sm text-gray-500 mb-2">Follow Us:</p>
+          <div class="flex space-x-4 mt-2">
+            <span class="bg-gray-900 text-white p-2 rounded-full text-sm"
+              >📷</span
+            >
+            <span class="bg-gray-900 text-white p-2 rounded-full text-sm"
+              >📘</span
+            >
+            <span class="bg-gray-900 text-white p-2 rounded-full text-sm"
+              >💼</span
+            >
+            <span class="bg-gray-900 text-white p-2 rounded-full text-sm"
+              >✖️</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    </mai>
+</body>
+</html>
