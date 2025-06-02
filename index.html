@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      /* For Webkit-based browsers (Chrome, Safari and Opera) */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* For IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
 
     <title>Manhattan Project</title>
   </head>
@@ -46,7 +58,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="overflow-hidden">
       <!-- Hero Section - Ciro's Part-->
       <div id="hero" class="relative h-screen overflow-hidden">
         <!-- Background Video -->
@@ -80,17 +92,17 @@
           <button
             class="bg-white/30 hover:bg-white/70 text-white font-semibold py-3 px-6 rounded-lg backdrop-blur-md transition duration-300"
           >
-            Start Exploring
+            Contact us
           </button>
         </div>
       </div>
 
       <!-- Card Section - Ciro's Part-->
-      <section class="w-full py-[8rem] grid gap-[2rem]">
-        <div class="flex gap-[2rem]">
-          <div class="w-64 flex-1">
+      <section class="w-full py-[8rem] px-[2rem] grid gap-[2rem]">
+        <div class="flex flex-col md:flex-row gap-[4rem]">
+          <div class="w-full md:w-1/2">
             <h4 class="text-3xl">
-              Bean Tea My Friend offers a refreshing twist on traditional
+              Being Water My Friend offers a refreshing twist on traditional
               beverages. Our unique blend of mung beans and dried tangerine not
               only tantalizes your taste buds but also supports your wellness
               journey. Experience the perfect fusion of flavor and nutrition,
@@ -100,61 +112,90 @@
               Contact us
             </button>
           </div>
-          <figure class="w-36 flex-1 p-[2rem]max-w-l">
+          <figure class="w-full md:w-1/2 p-[2rem]max-w-l">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 307 100"
+              viewBox="0 0 290 63"
+              fill="none"
               class="w-full"
             >
               <path
-                d="M0 86.8h41.9c19.6 0 31.3-8.3 31.3-24.5 0-10.2-6-16.2-15.1-19.2 7.2-3.4 12.1-9.4 12.1-19.2 0-12.5-7.9-21.5-27.2-21.5H0zm47.2-58.5c0 5.7-3.8 8.7-11.7 8.7H23V19.6h12.5c8.3 0 11.7 3 11.7 8.7m2.6 32.5c0 6-3.8 8.7-12.1 8.7H22.6V51.7h15.1c8.3.4 12.1 3 12.1 9.1M128.3 0h-18.9L73.6 100h18.5zm88.3 44.5c0-23.8-12.8-42.3-46-42.3h-35.5v84.5h35.5c32.8.1 46-18.4 46-42.2m-24.1 0c0 16.6-9.4 22.6-22.3 22.6h-12.1V21.9h12.1c12.8 0 22.3 6 22.3 22.6M224.2 46.4c0 22.6 18.5 41.1 41.1 41.1s41.1-18.5 41.1-41.1-18.5-41.1-41.1-41.1c-22.7 0-41.1 18.5-41.1 41.1m7.9 0c0-18.9 14.7-34 33.2-34s33.2 15.1 33.2 34-15.1 34-33.2 34c-18.5-.4-33.2-15.5-33.2-34M246 66.8h12.8v-14h7.5l7.5 14h14l-9.4-16.6c4.2-1.9 7.5-6.8 7.5-12.1 0-9.4-6-14-16.6-14h-23.8v42.6h.5zm26.8-28.7c0 3.4-2.3 4.9-6.4 4.9h-7.9v-9h7.9c4.5.3 6.4 1.1 6.4 4.1"
-              ></path>
+                d="M255.38 62.0738V0H289.269V13.9247H270.563V24.494H288.598V38.4186H270.563V62.0738H255.38Z"
+                fill="black"
+              />
+              <path
+                d="M240.38 48C244.246 48 247.38 51.134 247.38 55C247.38 58.866 244.246 62 240.38 62C236.514 62 233.38 58.866 233.38 55C233.38 51.134 236.514 48 240.38 48Z"
+                fill="black"
+              />
+              <path
+                d="M159.043 62.0738V0H179.427L191.758 40.8513H191.925L204.088 0H224.556V62.0738H209.96L210.464 15.6023L210.296 15.4346L197.042 62.0738H186.557L173.303 15.4346L173.135 15.6023L173.639 62.0738H159.043Z"
+                fill="black"
+              />
+              <path
+                d="M143.38 48C147.246 48 150.38 51.134 150.38 55C150.38 58.866 147.246 62 143.38 62C139.514 62 136.38 58.866 136.38 55C136.38 51.134 139.514 48 143.38 48Z"
+                fill="black"
+              />
+              <path
+                d="M61.7002 0H77.8058L86.1103 40.348H86.2781L95.4214 0H107.584L116.56 40.5157H116.728L125.2 0H141.222L124.781 62.0738H110.856L101.545 21.8936H101.377L92.066 62.0738H77.7219L61.7002 0Z"
+                fill="black"
+              />
+              <path
+                d="M58.3799 48C62.2459 48 65.3799 51.134 65.3799 55C65.3799 58.866 62.2459 62 58.3799 62C54.5139 62 51.3799 58.866 51.3799 55C51.3799 51.134 54.5139 48 58.3799 48Z"
+                fill="black"
+              />
+              <path
+                d="M0 62.0738V0H19.1254C29.6109 0 34.4761 1.0066 39.0058 6.03961C41.774 8.89165 42.6967 12.6664 42.6967 16.2734C42.6967 21.0548 40.5157 25.92 35.4827 28.772C45.4649 32.2951 45.7165 40.5996 45.7165 43.2C45.7165 48.1491 43.7872 53.6016 40.0124 56.7052C34.3084 61.4866 30.1981 62.0738 19.7126 62.0738H0ZM15.1829 13.9247V23.5713H20.8031C22.9841 23.5713 27.5138 23.5713 27.5138 18.6221C27.5138 13.9247 23.2357 13.9247 20.8031 13.9247H15.1829ZM15.1829 36.8249V48.1491H22.6485C24.6617 48.1491 30.5336 48.1491 30.5336 42.1934C30.5336 36.8249 25.165 36.8249 22.6485 36.8249H15.1829Z"
+                fill="black"
+              />
             </svg>
           </figure>
         </div>
-        <div class="flex snap-x gap-[2rem]">
-          <div class="w-1/3 snap-center">
-            <figure>
-              <img
-                src="https://cdn.sanity.io/images/8nn8fua5/production/931c4de4f3cbbeb30a5b65677a174f2980e44805-720x900.jpg?w=1024&fm=webp&q=65"
-                alt=""
-              />
-            </figure>
-            <div>
-              <h5>Patagonia</h5>
-              <p>
-                An eCommerce experience driven by Patagonia’s brand mission.
-              </p>
+        <div class="flex w-full overflow-x-auto scrollbar-hide">
+          <div class="flex gap-[2rem] overflow-x-scroll scrollbar-hide snap-x">
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure class="overflow-hidden">
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/931c4de4f3cbbeb30a5b65677a174f2980e44805-720x900.jpg?w=1024&fm=webp&q=65"
+                  alt="Case study image"
+                  class="object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </figure>
+              <div>
+                <h5>Patagonia</h5>
+                <p>
+                  An eCommerce experience driven by Patagonia’s brand mission.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="w-1/3 snap-center">
-            <figure>
-              <img
-                src="https://cdn.sanity.io/images/8nn8fua5/production/f1931ee572cd014ca5c3b5fe7e6054cfc0583624-720x900.jpg?w=1024&fm=webp&q=65"
-                alt=""
-              />
-            </figure>
-            <div>
-              <h5>Wilson</h5>
-              <p>A century-old sports brand finding its place in culture</p>
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure>
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/f1931ee572cd014ca5c3b5fe7e6054cfc0583624-720x900.jpg?w=1024&fm=webp&q=65"
+                  alt=""
+                />
+              </figure>
+              <div>
+                <h5>Wilson</h5>
+                <p>A century-old sports brand finding its place in culture</p>
+              </div>
             </div>
-          </div>
-          <div class="w-1/3 snap-center">
-            <figure>
-              <video
-                preload="metadata"
-                loop=""
-                playsinline=""
-                src="https://cdn.sanity.io/files/8nn8fua5/production/9dc5a490bd877e8685f2089209db192188dd21e7.mp4"
-                data-can-play="true"
-              ></video>
-            </figure>
-            <div>
-              <h5>Google</h5>
-              <p>
-                An eCommerce experience helping Google bring its hardware to
-                people across the globe
-              </p>
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure>
+                <video
+                  preload="metadata"
+                  loop=""
+                  playsinline=""
+                  src="https://cdn.sanity.io/files/8nn8fua5/production/9dc5a490bd877e8685f2089209db192188dd21e7.mp4"
+                  data-can-play="true"
+                ></video>
+              </figure>
+              <div>
+                <h5>Google</h5>
+                <p>
+                  An eCommerce experience helping Google bring its hardware to
+                  people across the globe
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +208,7 @@
           FEATURED ENGAGEMENTS
         </h3>
 
-        <div class="flex overflow-x-auto space-x-4 p-4 ...">
+        <div class="flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
           <div class="min-w-[150px] p-4 rounded ...">
             <img
               class="mb-10"
