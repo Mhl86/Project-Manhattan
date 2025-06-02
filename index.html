@@ -15,20 +15,38 @@
           class="container mx-auto px-4 py-4 flex items-center justify-between"
         >
           <h1 class="text-2xl font-bold font-serif">Logo</h1>
-          <ul class="flex space-x-8">
+
+          <!-- Hamburger button (for mobile) -->
+          <button id="menu-btn" class="block md:hidden text-2xl cursor-pointer">☰</button>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-8" id="nav-links">
             <li><a href="index.html" class="hover:underline">Home Page</a></li>
-            <li><a href="aboutUs.html" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">About Us</a></li>
             <li>
               <a href="contactUs.html" class="hover:underline">Contact us</a>
             </li>
           </ul>
         </div>
+
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden px-4 space-y-4 py-4 hidden">
+          <li>
+            <a href="index.html" class="block hover:underline">Home Page</a>
+          </li>
+          <li><a href="#" class="block hover:underline">About Us</a></li>
+          <li>
+            <a href="contactUs.html" class="block hover:underline"
+              >Contact us</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!-- Hero Section - Ciro's Part-->
-      <div class="relative h-screen overflow-hidden">
+      <div id="hero" class="relative h-screen overflow-hidden">
         <!-- Background Video -->
         <video
           autoplay
@@ -276,54 +294,117 @@
           <div class="flex justify-between">
             <h3 class="text-[32px] leading-[1.3] font-bold">FEATURED NEWS</h3>
 
-            <button
-              class="bg-[#6f7447] hover:bg-[#c3df39] rounded-md w-[200px] ..."
+          <button
+            class="bg-[#6f7447] hover:bg-[#c3df39] rounded-md w-[200px] ..."
+          >
+            View All
+          </button>
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
             >
-              View All
-            </button>
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
           </div>
           <hr class="my-4 border-gray-300 ml-10 mr-10" />
-          <div>
-            <div class="relative">
-              <div class="relative w-75 h-51 overflow-hidden">
-                <img
-                  src="https://cdn.sanity.io/images/8nn8fua5/production/40ec6ffa532aea4fc483575b8ad14100bb6bf74c-870x544.png?w=720&fm=webp&q=65"
-                  width="300px"
-                  height="200px"
-                  alt="icon"
-                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                />
-              </div>
-              <h4
-                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
-              >
-                FOUR NOMINATIONS FOR THE INTERNET'S HIGHEST HONOR.
-              </h4>
-              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-                01234 56789.
-              </p>
-              <a
-                href="#"
-                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-                >&rarr;</a
-              >
-            </div>
-            <hr class="my-4 border-gray-300 ml-10 mr-10" />
-          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+            width="300px"
+            height="200px"
+            alt="icon"
+          />
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+          >
+            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
           <div class="relative">
-            <div class="relative w-75 h-51 overflow-hidden">
-              <img
-                src="https://cdn.sanity.io/images/8nn8fua5/production/2fa0bb6468d65193816cfe632e976afd191aada7-2000x1468.jpg?w=720&fm=webp&q=65"
-                width="300px"
-                height="200px"
-                alt="icon"
-                class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-              />
-            </div>
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
             <h4
-              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
             >
-              Tomorrow's shopper: Five ways brands can reach Gen Alpha today
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        </div>
+        <div class="relative">
+          <img
+            src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+            width="300px"
+            height="200px"
+            alt="icon"
+          />
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+          >
+            GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
+            >
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
             </h4>
             <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
               01234 56789.
@@ -337,19 +418,16 @@
           <hr class="my-4 border-gray-300 ml-10 mr-10" />
           <div>
             <div class="relative">
-              <div class="relative w-75 h-51 overflow-hidden">
-                <img
-                  src="https://cdn.sanity.io/images/8nn8fua5/production/4ceccaa859e480e1a9e719f33f7ca2ce8e8f5dd1-1000x734.jpg?w=720&fm=webp&q=65"
-                  width="300px"
-                  height="200px"
-                  alt="icon"
-                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                />
-              </div>
+              <img
+                src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+                width="300px"
+                height="200px"
+                alt="icon"
+              />
               <h4
-                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
               >
-                Generation Alpha: Say hello to tomorrow's shopper
+                GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
               </h4>
               <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
                 01234 56789.
@@ -363,19 +441,16 @@
             <hr class="my-4 border-gray-300 ml-10 mr-10" />
           </div>
           <div class="relative">
-            <div class="relative w-75 h-51 overflow-hidden">
-              <img
-                src="https://cdn.sanity.io/images/8nn8fua5/production/e1ee6f1258bdc530b8843f97029f804856f72d61-2000x1468.jpg?w=720&fm=webp&q=65"
-                width="300px"
-                height="200px"
-                alt="icon"
-                class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-              />
-            </div>
+            <img
+              src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+              width="300px"
+              height="200px"
+              alt="icon"
+            />
             <h4
-              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
             >
-              The Future of Fashion and AI at Glossy's Ecommerce Summit
+              GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
             </h4>
             <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
               01234 56789.
@@ -389,19 +464,16 @@
           <hr class="my-4 border-gray-300 ml-10 mr-10" />
           <div>
             <div class="relative">
-              <div class="relative w-75 h-51 overflow-hidden">
-                <img
-                  src="https://cdn.sanity.io/images/8nn8fua5/production/11a5f82ab2838edc5756c262023dcc3ffe0bd0b8-1000x734.png?w=720&fm=webp&q=65"
-                  width="300px"
-                  height="200px"
-                  alt="icon"
-                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                />
-              </div>
+              <img
+                src="https://images.photowall.com/products/61295/white-horse-dressage.jpg?h=699&q=85"
+                width="300px"
+                height="200px"
+                alt="icon"
+              />
               <h4
-                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold underline"
               >
-                Retail's new playground: where physical meets digital
+                GOOGLE YZab cdefgh ijklm1 nop qrs tuvw xyz
               </h4>
               <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
                 01234 56789.
@@ -411,90 +483,108 @@
                 class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
                 >&rarr;</a
               >
-            </div>
-            <hr class="my-4 border-gray-300 ml-10 mr-10" />
-            <div>
-              <div class="relative">
-                <div class="relative w-75 h-51 overflow-hidden">
-                  <img
-                    src="https://cdn.sanity.io/images/8nn8fua5/production/1f72d719b320cc973839fabfd6cff390d3aac1c4-1000x734.jpg?w=720&fm=webp&q=65"
-                    width="300px"
-                    height="200px"
-                    alt="icon"
-                    class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                  />
-                </div>
-                <h4
-                  class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
-                >
-                  Gen Alpha, the beta test for how brands can reach a new
-                  generation
-                </h4>
-                <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-                  01234 56789.
-                </p>
-                <a
-                  href="#"
-                  class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-                  >&rarr;</a
-                >
-              </div>
-              <hr class="my-4 border-gray-300 ml-10 mr-10" />
-            </div>
-            <div class="relative">
-              <div class="relative w-75 h-51 overflow-hidden">
-                <img
-                  src="https://cdn.sanity.io/images/8nn8fua5/production/1e04aa777778cf8bd2395e66ee1e8b4d9b2e94a6-870x544.png?w=720&fm=webp&q=65"
-                  width="300px"
-                  height="200px"
-                  alt="icon"
-                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                />
-              </div>
-              <h4
-                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
-              >
-                New Projects on the Podium for the 28th Webby Awards
-              </h4>
-              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-                01234 56789.
-              </p>
-              <a
-                href="#"
-                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-                >&rarr;</a
-              >
-            </div>
-            <hr class="my-4 border-gray-300 ml-10 mr-10" />
-            <div>
-              <div class="relative">
-                <div class="relative w-75 h-51 overflow-hidden">
-                  <img
-                    src="https://cdn.sanity.io/images/8nn8fua5/production/8063a6f5ea9626cf98e092b801987075cf7fbe75-1000x734.jpg?w=720&fm=webp&q=65"
-                    width="300px"
-                    height="200px"
-                    alt="icon"
-                    class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
-                  />
-                </div>
-                <h4
-                  class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
-                >
-                  What Sofia Coppola Can Teach Us About Shifting Culture
-                </h4>
-                <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
-                  01234 56789.
-                </p>
-                <a
-                  href="#"
-                  class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
-                  >&rarr;</a
-                >
-              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Testimonial Section -->
+      <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center"> 
+          <h2 class="text-xl font-medium text-gray-500 mb-6">
+            Testimonial / 1 /
+          </h2>
+
+    <div
+      id="testimonial"
+      class="bg-white px-12 py-10 rounded-lg shadow-lg relative"
+    >
+      <img
+        src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg"
+        alt="User"
+        class="mx-auto w-20 h-20 rounded-full mb-4"
+      />
+      <h3 class="font-semibold text-lg">Alex Johnson</h3>
+      <p class="text-sm text-gray-600 mb-4">CEO, Urban Beverages</p>
+      <p class="text-lg font-semibold text-gray-800 leading-relaxed">
+        "Discover the unique taste of our mung bean tea, where tradition
+        meets innovation. Join us on this flavorful journey to wellness!"
+      </p>
+
+      <!-- Dots -->
+      <div class="flex justify-center mt-6 space-x-2">
+        <span class="w-2 h-2 rounded-full bg-gray-800"></span>
+        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+      </div>
+
+      <!-- Arrows -->
+      <button
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-xl bg-white border rounded-full p-2"
+      >
+        ←
+      </button>
+      <button
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-xl bg-white border rounded-full p-2"
+      >
+        →
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-white mt-16">
+  <div class="max-w-7xl mx-auto py-12 px-4 grid md:grid-cols-3 gap-8 text-sm">
+    <!-- Column 1: Logo & Contact -->
+    <div>
+      <h1 class="text-4xl font-[cursive] mb-6">Logo</h1>
+      <p class="font-semibold">Address:</p>
+      <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+      <p class="mt-4 font-semibold">Contact:</p>
+      <p><a href="tel:18001234567" class="underline">1800 123 4567</a></p>
+      <p><a href="mailto:info@beanteamyfriend.com" class="underline">info@beanteamyfriend.com</a></p>
+      <div class="flex space-x-4 mt-4">
+        <a href="#"><img src="assets/icons/facebook.svg" class="w-6 h-6"></a>
+        <a href="#"><img src="assets/icons/instagram.svg" class="w-6 h-6"></a>
+        <a href="#"><img src="assets/icons/youtube.svg" class="w-6 h-6"></a>
+        <a href="#"><img src="assets/icons/whatsapp.svg" class="w-6 h-6"></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation -->
+    <div>
+      <p class="font-semibold mb-2">Navigation</p>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:underline">Home Page</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="contactUs.html" class="hover:underline">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Legal -->
+    <div>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+        <li><a href="#" class="hover:underline">Cookies Settings</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t text-center text-xs py-4 text-gray-500">
+    © 2025 Bean Tea My Friend. All rights reserved.
+  </div>
+</footer>
+
     </main>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
