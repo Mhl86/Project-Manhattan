@@ -22,11 +22,17 @@
   <body class="w-full">
     <!-- Navbar -Param -->
     <header>
-      <nav class="bg-white shadow-md">
+      <nav class="bg-white shadow-md sticky">
         <div
           class="container mx-auto px-4 py-4 flex items-center justify-between"
         >
-          <h1 class="text-2xl font-bold font-serif">Logo</h1>
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="assets/icons/logoSmall.svg"
+              alt="Logo"
+              class="w-16 h-16 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+            />
+          </a>
 
           <!-- Hamburger button (for mobile) -->
           <button id="menu-btn" class="block md:hidden text-2xl cursor-pointer">
@@ -608,7 +614,13 @@
         >
           <!-- Column 1: Logo & Contact -->
           <div>
-            <h1 class="text-4xl font-[cursive] mb-6">Logo</h1>
+            <a href="index.html" class="flex items-center space-x-2">
+              <img
+                src="assets/icons/logoBig.svg"
+                alt="Logo"
+                class="w-32 h-32 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+              />
+            </a>
             <p class="font-semibold">Address:</p>
             <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
             <p class="mt-4 font-semibold">Contact:</p>
