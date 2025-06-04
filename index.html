@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      /* For Webkit-based browsers (Chrome, Safari and Opera) */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* For IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @layer base {
+        h1 {
+          font-family: "Host Grotesk", sans-serif;
+          font-size: 6.25vw;
+          font-weight: 600;
+          line-height: 120%;
+        }
+        h2 {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 3rem;
+          line-height: 120%;
+        }
+        h3 {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 2.5rem;
+          line-height: 120%;
+        }
+        h4 {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 130%;
+        }
+        h5 {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 140%;
+        }
+        h6 {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 500;
+          font-size: 1.25rem;
+          line-height: 140%;
+        }
+        p {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 150%;
+        }
+        li,
+        a {
+          font-family: "Host Grotesk", sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 120%;
+        }
+      }
+    </style>
+
+    <title>Manhattan Project</title>
+  </head>
+  <body class="w-full">
+    <!-- Navbar -Param -->
+    <header>
+      <nav class="bg-white shadow-md sticky">
+        <div
+          class="container mx-auto px-4 py-4 flex items-center justify-between"
+        >
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="assets/icons/logoSmall.svg"
+              alt="Logo"
+              class="w-16 h-16 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+            />
+          </a>
+
+          <!-- Hamburger button (for mobile) -->
+          <button id="menu-btn" class="block md:hidden text-2xl cursor-pointer">
+            ☰
+          </button>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-8" id="nav-links">
+            <li><a href="index.html" class="hover:underline">Home Page</a></li>
+            <li><a href="aboutUs.html" class="hover:underline">About Us</a></li>
+            <li>
+              <a href="contactUs.html" class="hover:underline">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden px-4 space-y-4 py-4 hidden">
+          <li>
+            <a href="index.html" class="block hover:underline">Home Page</a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="block hover:underline">About Us</a>
+          </li>
+          <li>
+            <a href="contactUs.html" class="block hover:underline"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden">
+      <!-- Hero Section - Ciro's Part-->
+      <div id="hero" class="relative h-screen overflow-hidden">
+        <!-- Background Video -->
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute w-full h-full object-cover z-0"
+        >
+          <source
+            src="https://cdn.sanity.io/files/8nn8fua5/production/c6fb986a862cbe643c40cbdd0318ebc495efb187.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay for Readability -->
+        <div class="absolute inset-8 bg-black/30 z-10"></div>
+        <!-- Hero Content -->
+        <div
+          class="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4"
+        >
+          <h1 class="font-bold mb-6">Be Water My Friend</h1>
+          <p class="px-12 mb-10">
+            A Berlin-based web app development studio. We craft digital
+            experiences that flow—connecting products to people, culture, and
+            meaning.
+          </p>
+          <button
+            class="bg-white/30 hover:bg-white/70 text-white font-semibold py-3 px-6 rounded-lg backdrop-blur-md transition duration-300"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+
+      <!-- Card Section - Ciro's Part-->
+      <section class="w-full py-[8rem] px-[2rem] grid gap-[2rem]">
+        <div class="flex flex-col md:flex-row gap-[4rem]">
+          <div class="order-2 md:order-1 w-full md:w-1/2">
+            <h4 class="mb-6 text-zinc-400">
+              <span class="font-bold text-black">Formless, but focused. </span
+              >Like water, we move with intention. We shape ideas into
+              intuitive, scalable web applications—seamlessly bridging design,
+              technology, and culture.We don’t force products into markets; we
+              help them flow naturally into people’s lives.
+            </h4>
+            <button
+              class="relative overflow-hidden border text-black py-2 px-8 rounded-full group"
+            >
+              <span
+                class="relative z-10 group-hover:text-white transition-colors duration-300"
+              >
+                Contact us
+              </span>
+
+              <!-- Background fill effect -->
+              <span
+                class="absolute bottom-0 left-0 w-full h-full bg-black transform scale-y-0 origin-center transition-transform duration-300 group-hover:scale-y-100"
+              ></span>
+            </button>
+          </div>
+          <figure class="order-1 md:order-2 w-full md:w-1/2 p-[2rem]max-w-l">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 290 63"
+              fill="none"
+              class="w-full p-8"
+            >
+              <path
+                d="M255.38 62.0738V0H289.269V13.9247H270.563V24.494H288.598V38.4186H270.563V62.0738H255.38Z"
+                fill="black"
+              />
+              <path
+                d="M240.38 48C244.246 48 247.38 51.134 247.38 55C247.38 58.866 244.246 62 240.38 62C236.514 62 233.38 58.866 233.38 55C233.38 51.134 236.514 48 240.38 48Z"
+                fill="black"
+              />
+              <path
+                d="M159.043 62.0738V0H179.427L191.758 40.8513H191.925L204.088 0H224.556V62.0738H209.96L210.464 15.6023L210.296 15.4346L197.042 62.0738H186.557L173.303 15.4346L173.135 15.6023L173.639 62.0738H159.043Z"
+                fill="black"
+              />
+              <path
+                d="M143.38 48C147.246 48 150.38 51.134 150.38 55C150.38 58.866 147.246 62 143.38 62C139.514 62 136.38 58.866 136.38 55C136.38 51.134 139.514 48 143.38 48Z"
+                fill="black"
+              />
+              <path
+                d="M61.7002 0H77.8058L86.1103 40.348H86.2781L95.4214 0H107.584L116.56 40.5157H116.728L125.2 0H141.222L124.781 62.0738H110.856L101.545 21.8936H101.377L92.066 62.0738H77.7219L61.7002 0Z"
+                fill="black"
+              />
+              <path
+                d="M58.3799 48C62.2459 48 65.3799 51.134 65.3799 55C65.3799 58.866 62.2459 62 58.3799 62C54.5139 62 51.3799 58.866 51.3799 55C51.3799 51.134 54.5139 48 58.3799 48Z"
+                fill="black"
+              />
+              <path
+                d="M0 62.0738V0H19.1254C29.6109 0 34.4761 1.0066 39.0058 6.03961C41.774 8.89165 42.6967 12.6664 42.6967 16.2734C42.6967 21.0548 40.5157 25.92 35.4827 28.772C45.4649 32.2951 45.7165 40.5996 45.7165 43.2C45.7165 48.1491 43.7872 53.6016 40.0124 56.7052C34.3084 61.4866 30.1981 62.0738 19.7126 62.0738H0ZM15.1829 13.9247V23.5713H20.8031C22.9841 23.5713 27.5138 23.5713 27.5138 18.6221C27.5138 13.9247 23.2357 13.9247 20.8031 13.9247H15.1829ZM15.1829 36.8249V48.1491H22.6485C24.6617 48.1491 30.5336 48.1491 30.5336 42.1934C30.5336 36.8249 25.165 36.8249 22.6485 36.8249H15.1829Z"
+                fill="black"
+              />
+            </svg>
+          </figure>
+        </div>
+        <div class="flex w-full overflow-x-auto scrollbar-hide">
+          <div class="flex gap-[2rem] overflow-x-scroll scrollbar-hide snap-x">
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure class="overflow-hidden mb-4">
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/931c4de4f3cbbeb30a5b65677a174f2980e44805-720x900.jpg?w=1024&fm=webp&q=65"
+                  alt="Case study image"
+                  class="object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </figure>
+              <div>
+                <h5>Strategy</h5>
+                <p class="text-gray-600">
+                  We distill clarity from chaos. From product-market fit to
+                  feature roadmaps, we help you define what matters.
+                </p>
+              </div>
+            </div>
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure class="overflow-hidden mb-4">
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/f1931ee572cd014ca5c3b5fe7e6054cfc0583624-720x900.jpg?w=1024&fm=webp&q=65"
+                  alt="Case study image2"
+                  class="object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </figure>
+              <div>
+                <h5>Design</h5>
+                <p class="text-gray-600">
+                  We obsess over detail. Pixel by pixel, we craft interfaces
+                  that speak with subtlety and strength.
+                </p>
+              </div>
+            </div>
+            <div class="min-w-[25rem] md:w-1/3 snap-center">
+              <figure class="overflow-hidden mb-4">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  src="https://cdn.sanity.io/files/8nn8fua5/production/9dc5a490bd877e8685f2089209db192188dd21e7.mp4"
+                  data-can-play="true"
+                  class="object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
+                ></video>
+              </figure>
+              <div>
+                <h5>Development</h5>
+                <p class="text-gray-600">
+                  We build with elegance. Scalable, modular, and adaptable—our
+                  codebase flows as cleanly as our ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--icons with description-->
+      <div class="p-[2rem]">
+        <hr class="border-gray-300 mx-auto mb-10" />
+        <h4 class="mb-20 font-bold">FEATURED ENGAGEMENTS</h4>
+
+        <div class="flex overflow-x-auto space-x-4">
+          <div class="min-w-[250px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://cdn.sanity.io/images/8nn8fua5/production/7121121ed910b145bdb6df487966a7888c2eb7c3-272x92.svg?w=720&fm=webp&q=65"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">GOOGLE</h5>
+            <p class="text-gray-600">
+              Our embedded partnership with Google is as deep as it gets. We're
+              the lead creative agency for Google Store and provide strategy,
+              design, and prototyping to other divisions. Learn more about our
+              partnership
+              <a class="underline hover:text-black" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[250px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://cdn.sanity.io/images/8nn8fua5/production/09a68ec6d03469bfd5bbb9726a58225acb900ae2-128x42.svg?w=720&fm=webp&q=65"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">KFC</h5>
+            <p class="text-gray-600">
+              An award-winning global, digital transformation engagement
+              spanning eCommerce, mobile app, and new drive thru experiences.
+              Bringing KFC's brand story to life while making it easier for
+              customers to buy chicken. Learn more about our partnership
+              <a class="underline hover:text-black" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[250px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://cdn.sanity.io/images/8nn8fua5/production/fbb650ce74c1849cb4da2d9951fad89149494cc9-171x42.svg?w=720&fm=webp&q=65"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">WILSON</h5>
+            <p class="text-gray-600">
+              A reimagining of Wilson's brand visual identity, and brand
+              campaign, to support a new product drop and the launch of the
+              first brick and mortar retail location in the brand's 108-year
+              history. Read our full case study
+              <a class="underline hover:text-black" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[250px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://cdn.sanity.io/images/8nn8fua5/production/b2624b2d49d9c14eec0cd30203c5eec0331eac42-42x42.svg?w=720&fm=webp&q=65"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">AT&T</h5>
+            <p class="text-gray-600">
+              Redesigning the digital flagship for the largest
+              telecommunications company in the world. Creating frictionless
+              paths to purchase for a wide range of consumers across a vast
+              portfolio of products and services.
+              <a class="underline hover:text-black" href="">Click Here</a>
+            </p>
+          </div>
+          <div class="min-w-[250px] p-4 rounded ...">
+            <img
+              class="mb-10"
+              src="https://cdn.sanity.io/images/8nn8fua5/production/8dd2f090726c8d5befeaa2924b44678e69452945-1024x200.svg?w=720&fm=webp&q=65"
+              width="100px"
+              height="100px"
+              alt="icon"
+            />
+            <h5 class="text-[20px] leading-[1.4]">PATAGONIA</h5>
+            <p class="text-gray-600">
+              Ongoing partnership providing strategy, branding, experience
+              design, and development focused on bringing their mission and
+              offerings to consumers through brand-led programs and platforms.
+              Read our full case study
+              <a class="underline hover:text-black" href="">Click Here</a>
+            </p>
+          </div>
+        </div>
+        <hr class="border-gray-300 mx-auto" />
+      </div>
+
+      <!--video-->
+      <div class="flex flex-col md:flex-row p-[2rem] gap-8">
+        <div class="justify-center">
+          <h1
+            class="atop-0 text-gray-800 font-bold flex flex-wrap items-center gap-4"
+          >
+            B.W.M.F HELPS <span>BRANDS</span>
+            <!-- Animated circle -->
+
+            <span
+              class="inline-block w-4 h-4 md:w-10 md:h-10 bg-gray-800 rounded-full animate-ping opacity-75"
+            ></span>
+
+            <span>CONNECT W/ CULTURE</span>
+          </h1>
+          <h5 class="text-gray-500 mb-10">Client-first mentality.</h5>
+          <button
+            class="relative overflow-hidden border text-black py-2 px-8 rounded-full group"
+          >
+            <span
+              class="relative z-10 group-hover:text-white transition-colors duration-300"
+            >
+              Contact us
+            </span>
+
+            <!-- Background fill effect -->
+            <span
+              class="absolute bottom-0 left-0 w-full h-full bg-black transform scale-y-0 origin-center transition-transform duration-300 group-hover:scale-y-100"
+            ></span>
+          </button>
+        </div>
+        <div class="w-full max-w-3xl mx-auto aspect-video">
+          <video class="w-full h-full object-cover" autoplay muted loop>
+            <source
+              src="https://cdn.sanity.io/files/8nn8fua5/production/e4a840ba8dfeded08ac4d0ba6e930be56fc68e3b.mp4"
+              type="video/mp4"
+            />
+            Nice video
+          </video>
+        </div>
+      </div>
+
+      <!--FEATURED News -->
+
+      <div class="p-[2rem]">
+        <hr class="border-gray-300 mx-auto mb-20" />
+        <div class="flex justify-between mb-10">
+          <h4 class="leading-[1.3] font-bold">FEATURED NEWS</h4>
+
+          <button
+            class="relative overflow-hidden border text-black py-2 px-8 rounded-full group"
+          >
+            <span
+              class="relative z-10 group-hover:text-white transition-colors duration-300"
+            >
+              View all
+            </span>
+
+            <!-- Background fill effect -->
+            <span
+              class="absolute bottom-0 left-0 w-full h-full bg-black transform scale-y-0 origin-center transition-transform duration-300 group-hover:scale-y-100"
+            ></span>
+          </button>
+        </div>
+        <div>
+          <!-- List Items1-->
+          <div class="flex flex-col md:flex-row group gap-4">
+            <div class="w-full md:w-1/3 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/40ec6ffa532aea4fc483575b8ad14100bb6bf74c-870x544.png?w=720&fm=webp&q=65"
+                alt="icon"
+                class="object-cover scale-110 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <div
+              class="flex flex-row justify-between w-full gap-2 items-center md:items-start"
+            >
+              <h5 class="group-hover:underline">
+                FOUR NOMINATIONS FOR THE INTERNET'S HIGHEST HONOR.
+              </h5>
+              <figure
+                class="w-[24px] h-[24px] md:w-[30px] md:h-[30px] group-hover:translate-x-1/2 duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                  <path d="M.1 7.5h14v2H.1z"></path>
+                  <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4z"></path>
+                  <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17z"></path>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <hr class="border-gray-300 mx-auto my-10" />
+        </div>
+        <div>
+          <!-- List Items2-->
+          <div class="flex flex-col md:flex-row group gap-4">
+            <div class="w-full md:w-1/3 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/2fa0bb6468d65193816cfe632e976afd191aada7-2000x1468.jpg?w=720&fm=webp&q=65"
+                alt="icon"
+                class="object-cover scale-110 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <div
+              class="flex flex-row justify-between w-full gap-2 items-center md:items-start"
+            >
+              <h5 class="group-hover:underline uppercase">
+                Tomorrow’s shopper: Five ways brands can reach Gen Alpha today.
+              </h5>
+              <figure
+                class="w-[24px] h-[24px] md:w-[30px] md:h-[30px] group-hover:translate-x-1/2 duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                  <path d="M.1 7.5h14v2H.1z"></path>
+                  <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4z"></path>
+                  <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17z"></path>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <hr class="border-gray-300 mx-auto my-10" />
+        </div>
+        <div>
+          <!-- List Items3-->
+          <div class="flex flex-col md:flex-row group gap-4">
+            <div class="w-full md:w-1/3 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/4ceccaa859e480e1a9e719f33f7ca2ce8e8f5dd1-1000x734.jpg?w=720&fm=webp&q=65"
+                alt="icon"
+                class="object-cover scale-110 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <div
+              class="flex flex-row justify-between w-full gap-2 items-center md:items-start"
+            >
+              <h5 class="group-hover:underline uppercase">
+                Generation Alpha: Say hello to tomorrow’s shopper.
+              </h5>
+              <figure
+                class="w-[24px] h-[24px] md:w-[30px] md:h-[30px] group-hover:translate-x-1/2 duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                  <path d="M.1 7.5h14v2H.1z"></path>
+                  <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4z"></path>
+                  <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17z"></path>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <hr class="border-gray-300 mx-auto my-10" />
+        </div>
+        <div>
+          <!-- List Items4-->
+          <div class="flex flex-col md:flex-row group gap-4">
+            <div class="w-full md:w-1/3 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/e1ee6f1258bdc530b8843f97029f804856f72d61-2000x1468.jpg?w=720&fm=webp&q=65"
+                alt="icon"
+                class="object-cover scale-110 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <div
+              class="flex flex-row justify-between w-full gap-2 items-center md:items-start"
+            >
+              <h5 class="group-hover:underline uppercase">
+                The Future of Fashion and AI at Glossy's Ecommerce Summit.
+              </h5>
+              <figure
+                class="w-[24px] h-[24px] md:w-[30px] md:h-[30px] group-hover:translate-x-1/2 duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                  <path d="M.1 7.5h14v2H.1z"></path>
+                  <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4z"></path>
+                  <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17z"></path>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <hr class="border-gray-300 mx-auto my-10" />
+        </div>
+        <div>
+          <!-- List Items5-->
+          <div class="flex flex-col md:flex-row group gap-4">
+            <div class="w-full md:w-1/3 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/11a5f82ab2838edc5756c262023dcc3ffe0bd0b8-1000x734.png?w=720&fm=webp&q=65"
+                alt="icon"
+                class="object-cover scale-110 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <div
+              class="flex flex-row justify-between w-full gap-2 items-center md:items-start"
+            >
+              <h5 class="group-hover:underline uppercase">
+                Retail’s new playground: where physical meets digital.
+              </h5>
+              <figure
+                class="w-[24px] h-[24px] md:w-[30px] md:h-[30px] group-hover:translate-x-1/2 duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                  <path d="M.1 7.5h14v2H.1z"></path>
+                  <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4z"></path>
+                  <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17z"></path>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <hr class="border-gray-300 mx-auto my-10" />
+        </div>
+
+        <!-- <div class="relative">
+          <div class="relative w-75 h-51 overflow-hidden">
+            <img
+              src="https://cdn.sanity.io/images/8nn8fua5/production/2fa0bb6468d65193816cfe632e976afd191aada7-2000x1468.jpg?w=720&fm=webp&q=65"
+              width="300px"
+              height="200px"
+              alt="icon"
+              class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+            />
+          </div>
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+          >
+            Tomorrow's shopper: Five ways brands can reach Gen Alpha today
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <div class="relative w-75 h-51 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/4ceccaa859e480e1a9e719f33f7ca2ce8e8f5dd1-1000x734.jpg?w=720&fm=webp&q=65"
+                width="300px"
+                height="200px"
+                alt="icon"
+                class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+            >
+              Generation Alpha: Say hello to tomorrow's shopper
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        </div>
+        <div class="relative">
+          <div class="relative w-75 h-51 overflow-hidden">
+            <img
+              src="https://cdn.sanity.io/images/8nn8fua5/production/e1ee6f1258bdc530b8843f97029f804856f72d61-2000x1468.jpg?w=720&fm=webp&q=65"
+              width="300px"
+              height="200px"
+              alt="icon"
+              class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+            />
+          </div>
+          <h4
+            class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+          >
+            The Future of Fashion and AI at Glossy's Ecommerce Summit
+          </h4>
+          <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+            01234 56789.
+          </p>
+          <a
+            href="#"
+            class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+            >&rarr;</a
+          >
+        </div>
+        <hr class="my-4 border-gray-300 ml-10 mr-10" />
+        <div>
+          <div class="relative">
+            <div class="relative w-75 h-51 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/11a5f82ab2838edc5756c262023dcc3ffe0bd0b8-1000x734.png?w=720&fm=webp&q=65"
+                width="300px"
+                height="200px"
+                alt="icon"
+                class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+            >
+              Retail's new playground: where physical meets digital
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          <div>
+            <div class="relative">
+              <div class="relative w-75 h-51 overflow-hidden">
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/1f72d719b320cc973839fabfd6cff390d3aac1c4-1000x734.jpg?w=720&fm=webp&q=65"
+                  width="300px"
+                  height="200px"
+                  alt="icon"
+                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <h4
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+              >
+                Gen Alpha, the beta test for how brands can reach a new
+                generation
+              </h4>
+              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+                01234 56789.
+              </p>
+              <a
+                href="#"
+                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+                >&rarr;</a
+              >
+            </div>
+            <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          </div>
+          <div class="relative">
+            <div class="relative w-75 h-51 overflow-hidden">
+              <img
+                src="https://cdn.sanity.io/images/8nn8fua5/production/1e04aa777778cf8bd2395e66ee1e8b4d9b2e94a6-870x544.png?w=720&fm=webp&q=65"
+                width="300px"
+                height="200px"
+                alt="icon"
+                class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+              />
+            </div>
+            <h4
+              class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+            >
+              New Projects on the Podium for the 28th Webby Awards
+            </h4>
+            <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+              01234 56789.
+            </p>
+            <a
+              href="#"
+              class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+              >&rarr;</a
+            >
+          </div>
+          <hr class="my-4 border-gray-300 ml-10 mr-10" />
+          <div>
+            <div class="relative">
+              <div class="relative w-75 h-51 overflow-hidden">
+                <img
+                  src="https://cdn.sanity.io/images/8nn8fua5/production/8063a6f5ea9626cf98e092b801987075cf7fbe75-1000x734.jpg?w=720&fm=webp&q=65"
+                  width="300px"
+                  height="200px"
+                  alt="icon"
+                  class="object-cover scale-110 hover:scale-100 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <h4
+                class="absolute top-0 left-77 text-[24px] leading-[1.4] font-bold hover:underline"
+              >
+                What Sofia Coppola Can Teach Us About Shifting Culture
+              </h4>
+              <p class="absolute bottom-0 left-77 text-[12px] leading-[1.5]">
+                01234 56789.
+              </p>
+              <a
+                href="#"
+                class="absolute top-22 right-4 text-[#f86e08] hover:underline text-4xl"
+                >&rarr;</a
+              >
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Testimonial Section -->
+      <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-xl font-medium text-gray-500 mb-6">
+            Testimonial / 1 /
+          </h2>
+
+          <div
+            id="testimonial"
+            class="bg-white px-12 py-10 rounded-lg shadow-lg relative"
+          >
+            <img
+              src="https://www.chemietechnik.de/files/upload/post/cte/2024/04/473987/nadja-hakansson-ceo-tk-uhde.jpeg"
+              alt="User"
+              class="mx-auto w-20 h-20 rounded-full mb-4"
+            />
+            <h3 class="font-semibold text-lg">Alex Johnson</h3>
+            <p class="text-sm text-gray-600 mb-4">CEO, Urban Beverages</p>
+            <p class="text-gray-800 leading-relaxed">
+              "Discover the unique taste of our mung bean tea, where tradition
+              meets innovation. Join us on this flavorful journey to wellness!"
+            </p>
+
+            <!-- Dots -->
+            <div class="flex justify-center mt-6 space-x-2">
+              <span class="w-2 h-2 rounded-full bg-gray-800"></span>
+              <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+            </div>
+
+            <!-- Arrows -->
+            <button
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 text-xl bg-white border rounded-full p-2"
+            >
+              ←
+            </button>
+            <button
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 text-xl bg-white border rounded-full p-2"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-white mt-16 max-w-[117rem] px-8">
+        <div
+          class="w-full mx-auto py-12 px-4 grid md:grid-cols-3 gap-8 text-sm"
+        >
+          <!-- Column 1: Logo & Contact -->
+          <div class="flex flex-col items-start space-y-4">
+            <a href="index.html" class="flex items-start">
+              <!-- <img
+                src="assets/icons/logoSmall.svg"
+                alt="Logo"
+                class="w-32 h-32 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+              /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 290 63"
+                fill="none"
+                class="w-32 mb-4 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+              >
+                <path
+                  d="M255.38 62.0738V0H289.269V13.9247H270.563V24.494H288.598V38.4186H270.563V62.0738H255.38Z"
+                  fill="black"
+                />
+                <path
+                  d="M240.38 48C244.246 48 247.38 51.134 247.38 55C247.38 58.866 244.246 62 240.38 62C236.514 62 233.38 58.866 233.38 55C233.38 51.134 236.514 48 240.38 48Z"
+                  fill="black"
+                />
+                <path
+                  d="M159.043 62.0738V0H179.427L191.758 40.8513H191.925L204.088 0H224.556V62.0738H209.96L210.464 15.6023L210.296 15.4346L197.042 62.0738H186.557L173.303 15.4346L173.135 15.6023L173.639 62.0738H159.043Z"
+                  fill="black"
+                />
+                <path
+                  d="M143.38 48C147.246 48 150.38 51.134 150.38 55C150.38 58.866 147.246 62 143.38 62C139.514 62 136.38 58.866 136.38 55C136.38 51.134 139.514 48 143.38 48Z"
+                  fill="black"
+                />
+                <path
+                  d="M61.7002 0H77.8058L86.1103 40.348H86.2781L95.4214 0H107.584L116.56 40.5157H116.728L125.2 0H141.222L124.781 62.0738H110.856L101.545 21.8936H101.377L92.066 62.0738H77.7219L61.7002 0Z"
+                  fill="black"
+                />
+                <path
+                  d="M58.3799 48C62.2459 48 65.3799 51.134 65.3799 55C65.3799 58.866 62.2459 62 58.3799 62C54.5139 62 51.3799 58.866 51.3799 55C51.3799 51.134 54.5139 48 58.3799 48Z"
+                  fill="black"
+                />
+                <path
+                  d="M0 62.0738V0H19.1254C29.6109 0 34.4761 1.0066 39.0058 6.03961C41.774 8.89165 42.6967 12.6664 42.6967 16.2734C42.6967 21.0548 40.5157 25.92 35.4827 28.772C45.4649 32.2951 45.7165 40.5996 45.7165 43.2C45.7165 48.1491 43.7872 53.6016 40.0124 56.7052C34.3084 61.4866 30.1981 62.0738 19.7126 62.0738H0ZM15.1829 13.9247V23.5713H20.8031C22.9841 23.5713 27.5138 23.5713 27.5138 18.6221C27.5138 13.9247 23.2357 13.9247 20.8031 13.9247H15.1829ZM15.1829 36.8249V48.1491H22.6485C24.6617 48.1491 30.5336 48.1491 30.5336 42.1934C30.5336 36.8249 25.165 36.8249 22.6485 36.8249H15.1829Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <h6 class="font-semibold">Address:</h6>
+            <p class="text-sm">Level 1, 12 Sample St, Sydney NSW 2000</p>
+            <h6 class="mt-4 font-semibold">Contact:</h6>
+            <p><a href="tel:18001234567" class="underline">1800 123 4567</a></p>
+            <p>
+              <a href="mailto:info@beanteamyfriend.com" class="underline"
+                >info@beingwatermyfriend.com</a
+              >
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#"
+                ><img src="assets/icons/facebook.svg" class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/instagram.svg" class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/youtube.svg" class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/whatsapp.svg" class="w-6 h-6"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation -->
+          <div>
+            <h6 class="font-semibold mb-2">Pages</h6>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="hover:underline">Home Page</a>
+              </li>
+              <li>
+                <a href="aboutUs.html" class="hover:underline">About Us</a>
+              </li>
+              <li>
+                <a href="contactUs.html" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Legal -->
+          <div>
+            <h6 class="font-semibold mb-2">Legal</h6>
+
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" class="hover:underline">Terms of Service</a></li>
+              <li><a href="#" class="hover:underline">Cookies Settings</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full mx-auto px-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1472"
+            viewBox="0 0 1472 145"
+            fill="none"
+            class="w-full my-[2rem]"
+          >
+            <path
+              d="M1471.51 6.5437V110H1449.42V101.612H1449.14C1447.18 104.827 1441.59 112.517 1425.93 112.517C1402.44 112.517 1387.06 94.3418 1387.06 70.9942C1387.06 44.7107 1405.8 29.7515 1425.51 29.7515C1439.21 29.7515 1445.78 36.4622 1448.3 38.9787V6.5437H1471.51ZM1410.27 70.8544C1410.27 82.8777 1418.8 90.8466 1429.71 90.8466C1444.25 90.8466 1449.56 78.9631 1449.56 70.8544C1449.56 61.4874 1442.85 51.4214 1429.99 51.4214C1416.56 51.4214 1410.27 61.9068 1410.27 70.8544Z"
+              fill="black"
+            />
+            <path
+              d="M1307.96 110V32.4078H1329.63V40.6563H1329.91C1332.28 36.8816 1337.18 29.7515 1351.02 29.7515C1358.43 29.7515 1366.68 32.8272 1370.87 36.4621C1375.06 40.0971 1379.82 46.2485 1379.82 61.4874V110H1356.61V67.6388C1356.61 62.1864 1356.61 51.5612 1344.45 51.5612C1331.17 51.5612 1331.17 63.0252 1331.17 67.7786V110H1307.96Z"
+              fill="black"
+            />
+            <path
+              d="M1274.2 85.6738H1297.96C1294.19 94.3418 1288.74 101.052 1282.17 105.526C1275.73 110.14 1268.05 112.517 1260.08 112.517C1237.85 112.517 1218.97 94.4816 1218.97 71.4136C1218.97 49.7437 1236.03 29.7515 1259.66 29.7515C1283.28 29.7515 1300.62 48.4854 1300.62 72.1126C1300.62 75.1884 1300.34 76.4466 1300.06 78.2641H1241.9C1243.3 87.4913 1250.99 92.9437 1260.08 92.9437C1267.21 92.9437 1270.98 89.7282 1274.2 85.6738ZM1242.18 62.6058H1277.41C1276.43 57.9922 1271.82 49.3243 1259.8 49.3243C1247.77 49.3243 1243.16 57.9922 1242.18 62.6058Z"
+              fill="black"
+            />
+            <path
+              d="M1211.96 32.4078V110H1188.76V32.4078H1211.96Z"
+              fill="black"
+            />
+            <path
+              d="M1200.38 0C1193.75 0 1188.38 5.37258 1188.38 12C1188.38 18.6274 1193.75 24 1200.38 24C1207.01 24 1212.38 18.6274 1212.38 12C1212.38 5.37258 1207.01 0 1200.38 0Z"
+              fill="black"
+            />
+            <path
+              d="M1140.69 110V32.4078H1162.5V40.6563H1162.78C1164.74 36.8816 1168.79 29.7515 1182.21 29.7515V53.099C1171.45 53.3786 1163.9 55.6155 1163.9 67.3592V110H1140.69Z"
+              fill="black"
+            />
+            <path
+              d="M1076.68 110V6.5437H1133.16V29.7515H1101.98V47.367H1132.04V70.5748H1101.98V110H1076.68Z"
+              fill="black"
+            />
+            <path
+              d="M1010.58 32.4077H1035.18L996.316 135.864H971.71L984.013 106.085L955.213 32.4077H979.959L995.477 77.4252H995.757L1010.58 32.4077Z"
+              fill="black"
+            />
+            <path
+              d="M842.105 110V6.5437H876.078L896.629 74.6291H896.909L917.181 6.5437H951.293V110H926.967L927.806 32.5476L927.526 32.268L905.437 110H887.961L865.872 32.268L865.592 32.5476L866.431 110H842.105Z"
+              fill="black"
+            />
+            <path
+              d="M758.239 110V32.4078H780.048V40.6563H780.328C782.285 36.8816 786.34 29.7515 799.761 29.7515V53.099C788.996 53.3786 781.447 55.6155 781.447 67.3592V110H758.239Z"
+              fill="black"
+            />
+            <path
+              d="M724.618 85.6738H748.385C744.61 94.3418 739.158 101.052 732.587 105.526C726.156 110.14 718.466 112.517 710.497 112.517C688.268 112.517 669.395 94.4816 669.395 71.4136C669.395 49.7437 686.451 29.7515 710.078 29.7515C733.705 29.7515 751.041 48.4854 751.041 72.1126C751.041 75.1884 750.762 76.4466 750.482 78.2641H692.323C693.721 87.4913 701.41 92.9437 710.497 92.9437C717.628 92.9437 721.402 89.7282 724.618 85.6738ZM692.602 62.6058H727.833C726.855 57.9922 722.241 49.3243 710.218 49.3243C698.195 49.3243 693.581 57.9922 692.602 62.6058Z"
+              fill="black"
+            />
+            <path
+              d="M657.988 6.5437V32.4078H669.173V50.0233H657.988V110H634.781V50.0233H623.316V32.4078H634.781V6.5437H657.988Z"
+              fill="black"
+            />
+            <path
+              d="M618.146 32.4078V110H594.938V101.612H594.658C590.744 109.161 581.097 112.656 572.01 112.656C547.404 112.656 533.004 93.3631 533.004 71.134C533.004 45.6893 551.318 29.7515 572.01 29.7515C584.732 29.7515 591.862 35.9029 594.658 40.6563H594.938V32.4078H618.146ZM556.212 71.4136C556.212 78.6835 561.524 90.9864 575.505 90.9864C590.045 90.9864 594.938 78.6835 594.938 71.134C594.938 61.767 588.507 51.4214 575.365 51.4214C562.083 51.4214 556.212 62.6058 556.212 71.4136Z"
+              fill="black"
+            />
+            <path
+              d="M405.831 6.5437H432.674L446.515 73.7903H446.794L462.033 6.5437H482.305L497.264 74.0699H497.544L511.664 6.5437H538.367L510.965 110H487.757L472.239 43.033H471.959L456.441 110H432.534L405.831 6.5437Z"
+              fill="black"
+            />
+            <path
+              d="M367.026 32.4077V100.633C367.026 112.237 366.187 119.647 362.413 126.217C356.401 136.004 342.281 144.532 323.127 144.532C296.145 144.532 285.939 128.315 284.401 117.27H311.244C314.599 124.959 323.267 124.959 324.805 124.959C327.741 124.959 343.679 124.68 343.679 103.849V101.472H343.399C341.022 105.946 334.312 112.516 322.149 112.516C301.038 112.516 283.003 96.5786 283.003 71.6932C283.003 45.1301 302.017 29.8912 322.149 29.8912C330.817 29.8912 339.345 32.967 343.539 39.6776H343.818V32.4077H367.026ZM306.211 70.8543C306.211 83.2971 315.158 90.8466 324.805 90.8466C335.989 90.8466 343.818 82.7378 343.818 71.5534C343.818 59.1107 335.29 51.5611 324.945 51.5611C315.018 51.5611 306.211 59.5301 306.211 70.8543Z"
+              fill="black"
+            />
+            <path
+              d="M203.896 110V32.4078H225.565V40.6563H225.845C228.222 36.8816 233.115 29.7515 246.956 29.7515C254.365 29.7515 262.614 32.8272 266.808 36.4621C271.002 40.0971 275.756 46.2485 275.756 61.4874V110H252.548V67.6388C252.548 62.1864 252.548 51.5612 240.385 51.5612C227.103 51.5612 227.103 63.0252 227.103 67.7786V110H203.896Z"
+              fill="black"
+            />
+            <path
+              d="M192.693 32.4078V110H169.485V32.4078H192.693Z"
+              fill="black"
+            />
+            <path
+              d="M180.88 0C173.976 0 168.38 5.59644 168.38 12.5C168.38 19.4036 173.976 25 180.88 25C187.783 25 193.38 19.4036 193.38 12.5C193.38 5.59644 187.783 0 180.88 0Z"
+              fill="black"
+            />
+            <path
+              d="M135.724 85.6738H159.491C155.716 94.3418 150.264 101.052 143.693 105.526C137.262 110.14 129.572 112.517 121.603 112.517C99.3743 112.517 80.5005 94.4816 80.5005 71.4136C80.5005 49.7437 97.5568 29.7515 121.184 29.7515C144.811 29.7515 162.147 48.4854 162.147 72.1126C162.147 75.1884 161.867 76.4466 161.588 78.2641H103.429C104.827 87.4913 112.516 92.9437 121.603 92.9437C128.734 92.9437 132.508 89.7282 135.724 85.6738ZM103.708 62.6058H138.939C137.961 57.9922 133.347 49.3243 121.324 49.3243C109.3 49.3243 104.687 57.9922 103.708 62.6058Z"
+              fill="black"
+            />
+            <path
+              d="M0.74707 110V6.5437H32.6228C50.0985 6.5437 58.2073 8.22137 65.7568 16.6097C70.3704 21.3631 71.9082 27.6544 71.9082 33.666C71.9082 41.635 68.2733 49.7437 59.8849 54.4971C76.5218 60.3689 76.9413 74.2097 76.9413 78.5437C76.9413 86.7922 73.7257 95.8796 67.4345 101.052C57.9277 109.021 51.0772 110 33.6014 110H0.74707ZM26.0519 29.7515V45.8291H35.4189C39.0539 45.8291 46.6034 45.8291 46.6034 37.5806C46.6034 29.7515 39.4733 29.7515 35.4189 29.7515H26.0519ZM26.0519 67.9185V86.7923H38.4946C41.85 86.7923 51.6364 86.7922 51.6364 76.866C51.6364 67.9185 42.6888 67.9185 38.4946 67.9185H26.0519Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <div
+          class="border-t border-gray-300 text-center text-xs py-4 text-gray-500"
+        >
+          © 2025 Being Water My Friend. All rights reserved.
+        </div>
+      </footer>
+    </main>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
